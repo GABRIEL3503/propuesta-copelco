@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reseñas-app- PROPUESTA COPELCO</title>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "Nunito", sans-serif;
 
+        }
+
+        .pricing-card {
+            height: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 1.2rem;
+            max-width: 388px;
+            width: 86%;
+        }
+
+        .pricing-card h2 {
+            text-align: center;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .price {
+            color: #393939;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .features,
+        .addons {
+            margin-top: 1rem;
+        }
+
+        .features {
+            color: gray;
+            padding: 12px;
+            border-radius: 8px;
+            background-color: #bfe6ee57;
+            ;
+        }
+
+        .propuesta h2 {
+            color: #2e70b7;
+            ;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .titulo-dos {
+            font-size: 30px;
+            margin: 62px 0px 40px 0px;
+            font-weight: 400;
+            text-align: center;
+            color: #2e70b7;
+        }
+
+        .contenedor-propuesta {
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+
+        }
+
+        .feature,
+        .addon {
+            font-weight: 500;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .addons {
+            color: gray;
+            font-size: 16px;
+        }
+
+        .addon {
+            margin-bottom: 4px;
+            padding: 14px 22px;
+            background-color: #f4f4f4;
+            ;
+        }
+
+        .feature {
+            justify-content: flex-start;
+            gap: 4px;
+            display: flex;
+            font-size: 16px;
+            cursor: default;
+            align-items: flex-start;
+            font-size: 16px;
+            cursor: default;
+        }
+
+        .addon.active {
+            background: #bfe6ee57;
+        }
+
+        .addon .check {
+            background-color: white;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #eeeeee;
+            border-radius: 50%;
+        }
+
+        .addon.active .check {
+            background: #def1ff;
+            ;
+            border-color: #0077cc;
+        }
+
+
+        .features_software {
+            background-color: transparent;
+            border-radius: 8px;
+            padding: 12px;
+            color: gray;
+        }
+
+        .section-title {
+            color: #363636;
+            font-size: 22px;
+        }
+
+        .propuesta {
+            color: #2e70b7;
+            display: flex;
+            width: 48vw;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .propuesta {
+                width: 90vw;
+            }
+        }
+    </style>
 </head>
+
 <body style="
     display: flex;
     flex-direction: column;
@@ -14,18 +169,147 @@
 ">
     <img data-aos="fade-up" src="img/1.webp" alt="">
     <img data-aos="fade-up" src="img/2.webp" alt="">
-    <img  data-aos="fade-up"src="img/3.webp" alt="">
-    <img data-aos="fade-up" src="img/4.webp" alt="">       
+    <img data-aos="fade-up" src="img/3.webp" alt="">
+    <img data-aos="fade-up" src="img/4.webp" alt="">
     <img data-aos="fade-up" src="img/5.webp" alt="">
     <img data-aos="fade-up" src="img/6.webp" alt="">
     <img data-aos="fade-up" src="img/7.webp" alt="">
-    <img  data-aos="fade-up"src="img/8.webp" alt="">
+    <img data-aos="fade-up" src="img/8.webp" alt="">
     <img data-aos="fade-up" src="img/9.webp" alt="">
     <img data-aos="fade-up" src="img/10.webp" alt="">
 
+
+    <span class="contenedor-propuesta">
+
+        <section class="propuesta">
+
+
+      <div class="pricing-card" data-base-price="3950000">
+    <h2>Desarrollo de Software</h2>
+
+    <div class="features_software">
+        <h3 class="section-title">RESEÑASAppWeb - Plan Base</h3>
+
+        <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                alt="">Página web de bienvenida con branding de la empresa</div>
+        <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                alt="">Acceso fácil por link o código QR</div>
+        <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                alt="">Valoración con estrellas</div>
+        <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                alt="">Organización por áreas y categorías</div>
+        <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                alt="">Feedback en tiempo real</div>
+        <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                alt="">Recolección de opiniones reales de clientes</div>
+    </div>
+
+    <div class="price" id="price">$3.950.000</div>
+    <p style="text-align: center; margin-top: -18px;">Pago por única vez</p>
+
+    <div class="addons">
+        <h3 class="section-title">Funcionalidades FULL (opcional):</h3>
+        <div class="addon" data-price="">Administración de ítems reseñables</div>
+        <div class="addon" data-price="">Descarga e impresión de QRs para credenciales o cartelería</div>
+        <div class="addon" data-price="">Comentarios abiertos de los usuarios</div>
+        <div class="addon" data-price="">Estadísticas detalladas con historial y comparativas</div>
+        <div id="btn-add" class="addon" data-price="1890000">Elegir plan Full <span class="check"></span></div>
+    </div>
+</div>
+
+        </section>
+
+        <section class="propuesta">
+
+
+            <div class="pricing-card" data-base-price="64000">
+                <h2>Plan de hosting y soporte</h2>
+
+                <div class="features_software">
+                    <h3 class="section-title">Incluye</h3>
+                    <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                            alt="">Almacenamiento en servidor web.</div>
+                    <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                            alt="">Mantenimiento y soporte técnico.</div>
+                    <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                            alt="">Asesoramiento y atención personalizada.</div>
+
+                    <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                            alt="">Actualizaciones y mejoras periódicamente.</div>
+                </div>
+
+
+                <div class="price" id="price">$64.000</div>
+                <p style="text-align: center; margin-top: -18px;">Pago mensual <br> Consulta por descuento pagando varios meses</p>
+
+                <div class="addons">
+                    <h3 class="section-title">Admininistración</h3>
+                    <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                            alt="">Gestión de items</div>
+                    <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                            alt="">Informes y estadisticas Graficas</div>
+                    <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                            alt="">Gestión de
+                        info institucional y novedades</div>
+                    <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                            alt="">Mantenimiento y soporte técnico.</div>
+                    <div class="feature"><img src="img/done_outline_24dp_789DE5_FILL0_wght400_GRAD0_opsz24.png"
+                            alt="">Actualizaciones y mejoras periódicamente.</div>
+                    <div class="addon" id="btn-add" data-price="48000">Administracion a cargo de Octopus<span
+                            class="check"></span></div>
+
+                </div>
+            </div>
+        </section>
+    </span>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <script>
+        AOS.init();
+        document.querySelectorAll('.pricing-card').forEach(card => {
+            const basePrice = parseInt(card.dataset.basePrice);
+            let totalPrice = basePrice;
+
+            const priceDisplay = card.querySelector('.price');
+            const addons = card.querySelectorAll('.addon');
+            const btnFull = card.querySelector('#btn-add');
+
+            // Mostrar precio base al inicio
+            priceDisplay.textContent = `$${totalPrice.toLocaleString('es-AR')}`;
+
+            addons.forEach(addon => {
+                if (addon.id !== 'btn-add') {
+                    // Estos no tienen precio, son visuales
+                    addon.dataset.price = "0";
+                }
+
+                addon.addEventListener('click', () => {
+                    const price = parseInt(addon.dataset.price);
+
+                    // Si es el botón "Elegir plan Full"
+                    if (addon === btnFull) {
+                        const isActivating = !addon.classList.contains('active');
+
+                        // Activar/desactivar todos los anteriores
+                        addons.forEach(a => {
+                            if (a !== btnFull) {
+                                a.classList.toggle('active', isActivating);
+                            }
+                        });
+
+                        addon.classList.toggle('active', isActivating);
+                        totalPrice = isActivating ? basePrice + price : basePrice;
+
+                    } else {
+                        // Por si hacés click en los addons individuales (aunque no afecten el precio)
+                        addon.classList.toggle('active');
+                    }
+
+                    priceDisplay.textContent = `$${totalPrice.toLocaleString('es-AR')}`;
+                });
+            });
+        });
+
+    </script>
 </body>
+
 </html>
